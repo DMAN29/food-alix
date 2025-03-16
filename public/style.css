@@ -67,12 +67,12 @@ select {
 }
 
 .nav-right span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .nav-right i {
-  margin-right: 01rem;
-  font-size: x-large;
+  margin-right: 0.5rem;
+  font-size: large;
 }
 
 .food-items {
@@ -87,9 +87,9 @@ select {
 .food-items div:hover {
   cursor: pointer;
 }
-.food-items img {
-  height: 150px;
-  width: 150px;
+.food-item img {
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -359,4 +359,290 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* ----------------------------------------- Media Quearies ---------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .nav-left img {
+    height: 120px;
+    width: 120px;
+    margin-right: 5px;
+  }
+  .nav-left select {
+    font-size: medium;
+  }
+  .nav-right i {
+    font-size: medium;
+    margin-right: 0.2rem;
+  }
+  .nav-right span {
+    font-size: medium;
+  }
+  .food-item img {
+    width: 100px;
+    height: 100px;
+  }
+  .about-section {
+    width: 70%;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: small;
+  }
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  h1 {
+    padding-bottom: 1rem;
+  }
+  .nav {
+    width: 95%;
+  }
+  .nav-left img {
+    height: 80px;
+    width: 80px;
+    margin-right: 5px;
+  }
+  .nav-left select {
+    font-size: small;
+  }
+  .nav-right {
+    width: 70%;
+  }
+  .nav-right i {
+    font-size: medium;
+    margin-right: 0.2rem;
+  }
+  .nav-right span {
+    font-size: medium;
+  }
+  .food-item img {
+    height: 150px;
+    width: 150px;
+  }
+  .food-item {
+    margin-bottom: 0.5rem;
+  }
+  .about-section {
+    width: 90%;
+    padding: 0.5rem;
+  }
+  .about-intro {
+    font-size: small;
+  }
+  .about-section h1 {
+    margin: 0.5rem auto;
+  }
+  .grid-item img {
+    height: 120px;
+  }
+  .help-section {
+    width: 90%;
+    padding: 1rem;
+  }
+  .help {
+    font-size: x-small;
+  }
+  .cart {
+    font-size: x-large;
+  }
+
+  .sign-in {
+    width: 400px;
+  }
+  .sign-in input,
+  button {
+    font-size: small;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    font-size: x-small;
+  }
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  h1 {
+    padding-bottom: 1rem;
+  }
+  .nav {
+    width: 95%;
+  }
+  .nav-left img {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+  }
+  .nav-left select {
+    font-size: x-small;
+  }
+  .nav-right {
+    width: 40%;
+  }
+  .nav-right span {
+    display: none;
+  }
+  .nav-right i {
+    font-size: x-small;
+  }
+  .food-items {
+    margin-top: 0;
+  }
+  .food-item {
+    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .food-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .resturant img {
+    width: 100%;
+    border-radius: 1rem;
+    height: 80px;
+    object-fit: cover;
+  }
+  .resturant {
+    font-size: 0.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .resturant div {
+    padding: 0.1rem;
+  }
+  .resturants h1 {
+    padding-bottom: 0.1rem;
+    /* border: 2px solid red; */
+  }
+  .filter {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+  }
+  .filter div {
+    font-size: xx-small;
+    margin: 0.1rem;
+  }
+  .filter select {
+    font-size: xx-small;
+  }
+  .cities div {
+    width: 45%;
+    font-size: xx-small;
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+  .app-buttons img {
+    width: 70px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .footer-top {
+    margin-bottom: 0;
+  }
+  .footer-links {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .footer-container h4 {
+    font-size: 0.5rem;
+  }
+  .footer-container {
+    font-size: 0.4rem;
+  }
+
+  .about-section {
+    width: 90%;
+    padding: 0.2rem;
+  }
+  .about-intro {
+    font-size: x-small;
+  }
+  .about-section h1 {
+    margin: 0.5rem auto;
+  }
+  .grid-item {
+    margin: 0.3rem auto;
+    font-size: xx-small;
+    margin-bottom: 1rem;
+  }
+  .grid-item img {
+    height: 80px;
+  }
+  .grid-item h3 {
+    font-size: xx-small;
+  }
+  .grid-item button {
+    font-size: 8px;
+    padding: 0.1rem 0.3rem;
+    margin-top: 0.2rem;
+  }
+  /* -------------------------------- help ----------------------------- */
+  .help-section {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .help {
+    display: block;
+    font-size: xx-small;
+  }
+  .help-option {
+    width: 100%;
+  }
+  .help li {
+    margin: 0;
+    padding: 0.2rem;
+  }
+  .faq {
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 0;
+  }
+  /* ------------------------------- cart ---------------------------- */
+  .cart {
+    font-size: large;
+    text-align: center;
+  }
+
+  /* --------------------------------- sign in -------------------------- */
+
+  .form-box {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+  .sign-in {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .sign-in form {
+    margin-top: 0.5rem;
+  }
+  .sign-in input,
+  button {
+    font-size: small;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  .line-bar {
+    margin: 0.5rem 0;
+  }
+  .line-bar p {
+    border: 1px solid lightgray;
+  }
+  .suggest {
+    font-size: smaller;
+    margin-top: 1rem;
+  }
 }
